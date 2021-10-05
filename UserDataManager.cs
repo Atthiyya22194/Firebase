@@ -5,7 +5,8 @@ using UnityEngine;
 public static class UserDataManager
 {
     private const string PROGRESS_KEY = "Progress";
-    public static UserProgressData Progress;
+    public static UserProgressData Progress  = new UserProgressData ();
+    
     public static void Load()
     {
         //Cek apakah ada data yang tersimpan sbg PROGRESS_KEY
